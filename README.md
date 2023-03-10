@@ -65,7 +65,7 @@ We infer tensions ratios by inverting junctional equilibrium relations
 
 
 ### Credits, contact, citations
-If you use this tool, please cite the associated preprint: 
+If you use this tool, please cite the associated preprint.
 Do not hesitate to contact Sacha Ichbiah and Hervé Turlier for practical questions and applications. 
 We hope that **foambryo2d** could help biologists and physicists to shed light on the mechanical aspects of early development.
 
