@@ -41,9 +41,9 @@ plot_tension_inference(Mesh,dict_tensions)
 ### API and Documentation
 
 #### 1 - Creating a Mesh object
-The first step is to load your multimaterial mesh into a `DCEL_Data` object via the builder `DCEL_Data(Verts, Edges_multimaterial)`. 
-    - `Verts` is an V x 2 numpy array of vertex positions
-    - `Edges_multimaterial` is an F x 4 numpy array of face and material indices, where at each row the 2 first indices refers to a vertex and the 2 last refer to a given material, 0 being the exterior media
+The first step is to load your multimaterial mesh into a `DCEL_Data` object via the builder `DCEL_Data(Verts, Edges_multimaterial)`:
+- `Verts` is an V x 2 numpy array of vertex positions
+- `Edges_multimaterial` is an F x 4 numpy array of face and material indices, where at each row the 2 first indices refers to a vertex and the 2 last refer to a given material, 0 being the exterior media
 
 #### 2 - Infer the forces
  Then the second step is to use this `Mesh` object to infer the tensions and pressions
@@ -83,5 +83,7 @@ We hope that **foambryo2d** could help biologists and physicists to shed light o
 	journal = {bioRxiv}
 }
 ```
+
+
 
 
