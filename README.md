@@ -1,8 +1,8 @@
 ### foambryo-2d
 
-**foambryo-2d** is a python package based on Polyscope designed to infer surface tensions in 2D epithelial-cell-clusters `pip install foambryo-2d` It is the lightweight 2D adaptation of the 3d force-inference software [foambryo](todo)
+**foambryo-2d** is a python package based on Polyscope designed to infer surface tensions in 2D epithelial-cell-clusters `pip install foambryo-2d` It is the lightweight 2D adaptation of the 3d force-inference software [foambryo](todo), available soon.
 
-We rely on [delaunay-watershed](https://github.com/sacha-ichbiah/delaunay_watershed_2d), a tool we designed to reconstruct efficiently multimaterial meshes from instance segmentations. From these multimaterial meshes, we can efficiently and robustly extract junctional angles and invert **Young-Dupré** laws, to find back the physical parameters involved in the mechanical equilibrium: **surface tensions** $\gamma_{ij}$.
+We rely on [delaunay-watershed](https://github.com/VirtualEmbryo/delaunay_watershed_2d), a tool we designed to reconstruct efficiently multimaterial meshes from instance segmentations. From these multimaterial meshes, we can efficiently and robustly extract junctional angles and invert **Young-Dupré** laws, to find back the physical parameters involved in the mechanical equilibrium: **surface tensions** $\gamma_{ij}$.
 
 ### Example 
 
@@ -69,5 +69,19 @@ If you use this tool, please cite the associated preprint:
 Do not hesitate to contact Sacha Ichbiah and Hervé Turlier for practical questions and applications. 
 We hope that **foambryo2d** could help biologists and physicists to shed light on the mechanical aspects of early development.
 
+```
+@article {Yamamoto2023.03.07.531437,
+	author = {Yamamoto, Kazunori and Ichbiah, Sacha and Pinto, Joana and Delbary, Fabrice and Goehring, Nathan and Turlier, Herv{\'e} and Charras, Guillaume},
+	title = {Dissecting the subcellular forces sculpting early C. elegans embryos},
+	elocation-id = {2023.03.07.531437},
+	year = {2023},
+	doi = {10.1101/2023.03.07.531437},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Embryo shape is governed by the mechanics of individual cells, the strength of intercellular interactions, and geometrical constraints. Models in which cells interact through surface tensions successfully predict cell arrangement within aggregates. However, predicting cell shape dynamics remains challenging because of difficulties in measuring temporal changes in tensions. Here, we dissect the spatiotemporal changes in cellular surface tensions that sculpt the early nematode embryo, using AFM measurements and inverse modeling. We validate a hybrid tension inference pipeline that combines dynamic information from cell geometry and cortical myosin enrichment. The inferred spatiotemporal tensions allow prediction of morphogenesis in wild-type embryos as well as phenotypic changes arising from protein depletion. We further uncover a direct and non-affine contribution of cadherins to cell contact tensions, whose magnitude is comparable to cadherins{\textquoteright} indirect contribution via actomyosin regulation. Overall, our inference pipeline allows characterization of the forces underlying morphogenesis and their relationship to molecular processes.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2023/03/09/2023.03.07.531437},
+	eprint = {https://www.biorxiv.org/content/early/2023/03/09/2023.03.07.531437.full.pdf},
+	journal = {bioRxiv}
+}
+```
 
 
