@@ -1,5 +1,7 @@
 ### foambryo-2d
 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
 **foambryo-2d** is a python package based on Polyscope designed to infer surface tensions in 2D epithelial-cell-clusters `pip install foambryo-2d` It is the lightweight 2D adaptation of the 3d force-inference software [foambryo](todo), available soon.
 
 We rely on [delaunay-watershed](https://github.com/VirtualEmbryo/delaunay_watershed_2d), a tool we designed to reconstruct efficiently multimaterial meshes from instance segmentations. From these multimaterial meshes, we can efficiently and robustly extract junctional angles and invert **Young-Dupré** laws, to find back the physical parameters involved in the mechanical equilibrium: **surface tensions** $\gamma_{ij}$.
@@ -85,8 +87,6 @@ We hope that **foambryo2d** could help biologists and physicists to shed light o
 ```
 
 ### License
-
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
